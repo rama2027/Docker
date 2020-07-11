@@ -5,7 +5,7 @@ RUN yum -y install initscripts
 RUN yum install java -y
 RUN yum install wget -y
 RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-RUN rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+RUN rpm --import http://jenkins-ci.org/redhat/jenkins-ci.org.key
 RUN yum install jenkins -y
 RUN yum -y install initscripts
 RUN /etc/init.d/jenkins start
