@@ -9,7 +9,7 @@ stage("python")
 {
 steps
 {
-sh 'py.sh'
+sh '$WORKSPACE@script/py.sh'
 }
 }
 stage("Clone")
