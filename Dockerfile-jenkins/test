@@ -9,7 +9,6 @@ stage("python")
 {
 steps
 {
-sh '$WORKSPACE@script/Dockerfile-jenkins/py.sh'
 sh '$WORKSPACE/Dockerfile-jenkins/py.sh'
 }
 }
