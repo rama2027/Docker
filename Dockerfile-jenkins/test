@@ -9,15 +9,11 @@ stage("python")
 {
 steps
 {
-
+sh 'yum install python3 -y'
 sh 'python3 -m venv my_app/env'
-
 sh 'source ~/my_app/env/bin/activate'
-
 sh 'pip install pip --upgrade'
-
 sh 'pip install boto3'
-
 }
 }
 stage("Clone")
