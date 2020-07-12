@@ -9,7 +9,7 @@ stage("python")
 {
 steps
 {
-sh '$WORKSPACE/Dockerfile-jenkins/py.sh'
+sh 'sh $WORKSPACE/Dockerfile-jenkins/py.sh'
 }
 }
 stage("Clone")
