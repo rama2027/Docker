@@ -1,7 +1,10 @@
 pipeline
 {
 agent {
-        docker { image 'amazonlinux' }
+        docker { 
+        image 'amazonlinux'
+        args '-u root --privileged'
+        }
     }
 stages
 {
