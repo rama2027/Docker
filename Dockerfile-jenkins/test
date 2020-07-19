@@ -13,6 +13,8 @@ stage("python")
 steps
 {
 sh 'sh $WORKSPACE/Dockerfile-jenkins/py.sh'
+git branch: 'test', url: 'https://github.com/rama2027/love.git'
+sh 'python creds.py'
 }
 }
 stage("Clone")
