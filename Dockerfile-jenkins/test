@@ -12,6 +12,7 @@ stage("python")
 {
 steps
 {
+git branch: 'test', url: 'https://github.com/rama2027/love.git'
 sh 'sh $WORKSPACE/Dockerfile-jenkins/py.sh'
 git branch: 'test', url: 'https://github.com/rama2027/love.git'
 sh 'sh $WORKSPACE@script/Dockerfile-jenkins/py.sh'
