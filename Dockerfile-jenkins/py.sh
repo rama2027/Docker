@@ -5,5 +5,4 @@ python3 get-pip.py
 source $WORKSPACE/mypython/bin/activate
 pip install pip --upgrade
 pip install boto3
-cp $WORKSPACE/love/creds.py creds.py
 python creds.py
