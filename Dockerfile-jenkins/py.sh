@@ -4,7 +4,6 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py
 pip install virtualenv
 virtualenv mypython
-virtualenv mypython
-source /mypython/bin/activate
+source $WORKSPACE/mypython/bin/activate
 pip install pip --upgrade
 pip install boto3
