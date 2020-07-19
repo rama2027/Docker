@@ -1,9 +1,9 @@
- yum install sudo -y
+yum install sudo -y
 sudo yum install python3 -y
-yum install python3-pip
-python3-pip install virtualenv
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
 pip install virtualenv
-python3 -m virtualenv mypython
+virtualenv mypython
 virtualenv mypython
 source /mypython/bin/activate
 pip install pip --upgrade
