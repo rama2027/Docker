@@ -7,7 +7,7 @@ RUN yum install wget -y
 RUN yum install docker -y
 RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
 RUN rpm --import http://pkg.jenkins.io/redhat/jenkins.io.key
-RUN yum install jenkins -y
+RUN yum install jenkins-2.215 -y
 RUN yum -y install initscripts
 RUN /etc/init.d/jenkins start
 RUN chkconfig jenkins on
